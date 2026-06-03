@@ -1,0 +1,159 @@
+<!-- DESIGN NOTES
+CONCEPT: Field Logbook / Operations Ledger
+MOVES:
+1. Uses a dual-tone background approach to simulate ledger paper depth, with heavy structural borders (3px).
+2. Typographic hierarchy relies heavily on JetBrains Mono for a "stamped" or "typewriter" feel.
+3. Tables resemble accounting ledgers, with alternating light fills and strong vertical dividing lines.
+REFERENCE: Graph-paper engineering logs, carbon-copy field books, industrial stamped reports.
+-->\n<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width">
+    <!--[if mso]>
+      <style>
+        table {border-collapse:collapse;border-spacing:0;margin:0;}
+        div, td {padding:0;}
+        div {margin:0 !important;}
+      </style>
+      <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
+    <![endif]-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
+    body, table, td, p, a, li, blockquote { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #f6f3ec; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #f6f3ec; }
+    .v2-ledger { background-color: #f1ede1; }
+    @media screen and (max-width: 640px) {
+      .fluid { width: 100% !important; max-width: 100% !important; height: auto !important; }
+      .stack { display: block !important; width: 100% !important; }
+    }
+</style>
+    
+</head>
+<body style="margin: 0; padding: 0; background-color: #f6f3ec;">
+  <center style="width: 100%; background-color: #f6f3ec;">
+    <!--[if mso]><table role="presentation" border="0" cellpadding="0" cellspacing="0" width="640" align="center" style="width:640px;background-color:#f6f3ec;"><tr><td><![endif]-->
+    <div class="email-container">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 640px; margin: auto;">
+        
+      
+      <tr>
+        <td style="padding: 32px 24px; border: 3px solid #1a1a1a; border-left: none; border-right: none; border-top: none; background-color: #ebe7db;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 12px; font-weight: 700; color: #1a1a1a; letter-spacing: 1px;">[ FORM: WEEKLY_BUSINESS_REVIEW ]</td>
+              <td align="right" style="font-family: 'Inter', Arial, sans-serif; font-size: 12px; font-weight: 700; color: #1a1a1a; text-transform: uppercase; letter-spacing: 2px;">Sunbelt Sports</td>
+            </tr>
+            <tr>
+              <td colspan="2" style="padding-top: 16px; font-family: 'Source Serif 4', Georgia, serif; font-size: 40px; font-weight: 600; color: #1a1a1a; letter-spacing: -1px; line-height: 1;">Weekly Business Review</td>
+            </tr>
+            <tr>
+               <td colspan="2" style="padding-top: 12px; font-family: 'JetBrains Mono', Courier, monospace; font-size: 12px; color: #6b6b66;">LOGGED: 2026-04-22 // SEQ: #4928</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    
+      
+      <tr>
+        <td style="padding: 32px 24px 16px 24px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="24" style="border-top: 3px solid #1a1a1a; padding-top: 4px;"></td>
+              <td style="border-top: 1px solid #cfc9bd; padding-top: 4px; font-family: 'Inter', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #1a1a1a;"><span style="background-color: #1a1a1a; color: #f6f3ec; padding: 2px 6px; margin-right: 8px;">§</span> Key Performance Indicators</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    
+      
+      <tr>
+        <td style="padding: 0 24px 24px 24px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-right: 1px solid #cfc9bd;">
+            <tr>
+        <td width="33.333333333333336%" style="padding: 16px 24px; border: 1px solid #cfc9bd; border-right: none; background-color: #fff;">
+           <div style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 10px; color: #6b6b66; margin-bottom: 8px; border-bottom: 1px solid #cfc9bd; padding-bottom: 4px;">// WTD Revenue</div>
+           <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 28px; font-weight: 600; color: #1a1a1a;">$1.4M</div>
+        </td>
+      
+        <td width="33.333333333333336%" style="padding: 16px 24px; border: 1px solid #cfc9bd; border-right: none; background-color: #fff;">
+           <div style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 10px; color: #6b6b66; margin-bottom: 8px; border-bottom: 1px solid #cfc9bd; padding-bottom: 4px;">// Gross Margin</div>
+           <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 28px; font-weight: 600; color: #0BBE63;">24.1%</div>
+        </td>
+      
+        <td width="33.333333333333336%" style="padding: 16px 24px; border: 1px solid #cfc9bd; border-right: none; background-color: #fff;">
+           <div style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 10px; color: #6b6b66; margin-bottom: 8px; border-bottom: 1px solid #cfc9bd; padding-bottom: 4px;">// AR > 60d</div>
+           <div style="font-family: 'Source Serif 4', Georgia, serif; font-size: 28px; font-weight: 600; color: #eab308;">$412K</div>
+        </td>
+      </tr>
+          </table>
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td style="padding: 32px 24px 16px 24px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="24" style="border-top: 3px solid #1a1a1a; padding-top: 4px;"></td>
+              <td style="border-top: 1px solid #cfc9bd; padding-top: 4px; font-family: 'Inter', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #1a1a1a;"><span style="background-color: #1a1a1a; color: #f6f3ec; padding: 2px 6px; margin-right: 8px;">§</span> Executive Summary</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    
+      
+      <tr>
+        <td style="padding: 0 24px 16px 24px; font-family: 'Inter', Arial, sans-serif; font-size: 15px; line-height: 1.6; color: #1a1a1a;">
+          <p style="margin:0; padding-left: 16px; border-left: 2px solid #0BBE63;">EBITDA trending positive against Q3 forecasts. Asphalt raw material costs saw a 1.2% stabilization this week, padding base margins for the upcoming Dallas contracts. Cash flows remain robust, though aging receivables in the public sector divisions require follow-up.</p>
+        </td>
+      </tr>
+    
+      
+      <tr>
+        <td style="padding: 32px 24px 16px 24px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="24" style="border-top: 3px solid #1a1a1a; padding-top: 4px;"></td>
+              <td style="border-top: 1px solid #cfc9bd; padding-top: 4px; font-family: 'Inter', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #1a1a1a;"><span style="background-color: #1a1a1a; color: #f6f3ec; padding: 2px 6px; margin-right: 8px;">§</span> Operational Data</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    
+      
+      <tr>
+        <td style="padding: 0 24px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-bottom: 16px;">
+            <tr><th align="left" style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 10px; font-weight: 700; color: #f6f3ec; background-color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #444;">Region</th><th align="left" style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 10px; font-weight: 700; color: #f6f3ec; background-color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #444;">Rev WTD</th><th align="left" style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 10px; font-weight: 700; color: #f6f3ec; background-color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #444;">Margin</th><th align="left" style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 10px; font-weight: 700; color: #f6f3ec; background-color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #444;">Backlog</th></tr>
+            
+        <tr style="background-color: transparent;">
+          <td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; border-left: 1px solid #cfc9bd;">Southeast</td><td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; ">$850K</td><td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; ">25.2%</td><td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; ">$4.2M</td>
+        </tr>
+      
+        <tr style="background-color: #ebe7db;">
+          <td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; border-left: 1px solid #cfc9bd;">Texas</td><td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; ">$410K</td><td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; ">22.8%</td><td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; ">$5.8M</td>
+        </tr>
+      
+        <tr style="background-color: transparent;">
+          <td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; border-left: 1px solid #cfc9bd;">Midwest</td><td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; ">$140K</td><td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; ">21.5%</td><td style="font-family: 'JetBrains Mono', Courier, monospace; font-size: 13px; color: #1a1a1a; padding: 8px 12px; border-right: 1px solid #cfc9bd; border-bottom: 1px solid #cfc9bd; ">$1.1M</td>
+        </tr>
+      
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 32px 24px; border-top: 1px solid #cfc9bd; margin-top: 24px; text-align: center; font-family: 'Inter', Arial, sans-serif; font-size: 10px; color: #6b6b66;">
+           SUNBELT SPORTS COMMAND CENTER<br>
+           CONFIDENTIAL INTERNAL DOCUMENT
+        </td>
+      </tr>
+    
+      </table>
+    </div>
+    <!--[if mso]></td></tr></table><![endif]-->
+  </center>
+</body>
+</html>
