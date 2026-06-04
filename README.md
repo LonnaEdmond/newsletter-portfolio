@@ -1,20 +1,16 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# The Reporting System
 
-# Run and deploy your AI Studio app
+**[Live gallery →](https://reporting-newsletters.vercel.app/)** · part of [lonnaedmond.com](https://lonnaedmond.com)
 
-This contains everything you need to run your app locally.
+An automated operational reporting system: four self-sending report cadences built with Google Apps Script + Gmail HTML, designed like publications and delivered on schedule with **zero manual effort** since launch.
 
-View your app in AI Studio: https://ai.studio/apps/66422ddf-3e97-4473-98f8-dfff67695e31
+## What it demonstrates
 
-## Run Locally
+- **Deterministic report composition** — reports assemble themselves from live operational data on cron schedules (daily 06:00, weekly, business review, monthly)
+- **Exception-first information design** — "needs attention" surfaces before "going well"
+- **Email-native HTML** — built to be read in an inbox, with clear hierarchy and real signals
+- A scheduled pipeline: data pull → validation → templated render → delivery
 
-**Prerequisites:**  Node.js
+## Stack
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Google Apps Script + Gmail HTML delivery. The gallery shows the actual report designs with synthetic numbers; the production system sends daily and is private.
